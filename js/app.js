@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (counter<0) {counter=imgs.length-1}
             imgs[counter].classList.add('visible');
 
-            setTimeout(changeSlideAutomatically,5000);
+           timer= setTimeout(changeSlideAutomatically,7000);
 
         });
 
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if(counter>imgs.length-1) {counter=0}
             imgs[counter].classList.add('visible');
 
-            setTimeout(changeSlideAutomatically,5000);
+            timer = setTimeout(changeSlideAutomatically,7000);
         });
     }
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if(counter>imgs.length-1) {counter=0}
         imgs[counter].classList.add('visible');
 
-        timer = setTimeout(changeSlideAutomatically,5000);
+        timer = setTimeout(changeSlideAutomatically,7000);
 
 
        /* prev.addEventListener('click', function () {

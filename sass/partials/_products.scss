@@ -21,11 +21,11 @@
       }
 
       img:hover + div {
-        transform: scale(0);
+        opacity: 0;
       }
 
       .overlay {
-        //opacity: 1;
+        opacity: 1;
         width: 329px;
         height: 60px;
         background-color: rgba(255, 255, 255, 0.5);
@@ -34,7 +34,7 @@
         margin-top: -78px;
         position: relative;
         z-index: 2;
-        transition: transform 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
 
         h1 {
           width: 150px;
@@ -74,4 +74,10 @@
     margin-left: 8px;
   }
   }
+
+.test {
+  width: 331px;
+  height: 227px;
+  overflow: hidden;
+}
 
