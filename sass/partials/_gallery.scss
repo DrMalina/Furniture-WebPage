@@ -1,0 +1,111 @@
+.gallery {
+  height: 580px;
+  width: 100%;
+  background: rgb(248, 248, 248); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(207,206,211,1) 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(248,248,248,1) 0%,rgba(207,206,211,1) 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(248,248,248,1) 0%,rgba(207,206,211,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#cfced3',GradientType=0 ); /* IE6-9 */
+
+  display: flex;
+  justify-content: center;
+
+  &>div {
+    display: flex;
+  }
+
+  /*SLIDER */
+
+  .galleryPhoto {
+    ul, ul li {
+      list-style: none;
+    }
+    li {
+      display: none;
+      height: 341px;
+      width: 470px;
+
+      &:last-child > img {
+        padding: 50px 20px 20px 99px;
+      }
+    }
+
+    .visible {
+      display: inline-block;
+    }
+  }
+
+  .galleryPhoto,.arrowLeft, .arrowRight, .galleryText {
+  border: 1px solid blue;
+  }
+
+  .arrowLeft,.arrowRight {
+    font-size: 37px;
+    font-weight: normal;
+    line-height: 580px;
+    color: $spanColor;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-self: center;
+    //overflow: hidden;
+     i{
+       margin-top: -265px;
+       height: 52px;
+     }
+  }
+
+  .galleryPhoto , .galleryText {
+    height: 335px;
+    align-self: center;
+    margin-top: 85px;
+  }
+
+  .galleryPhoto  img {
+    transform: scale(1.2);
+  }
+
+  .galleryText {
+    text-align: center;
+    h1 {
+      font-size: 40px;
+      span {
+        color: $spanColor;
+        font-size: 42px;
+        font-weight: bold;
+      }
+    }
+    p {
+      //margin-top: 30px;
+      font-size: 16px;
+      padding: 32px 81px 0px;
+      line-height: 27px;
+    }
+
+    button {
+      margin-top: 45px;
+      width: 281px;
+      height: 55px;
+      background-color: $spanColor;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 25px;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: lighten($spanColor,10%);
+      }
+    }
+  }
+
+  .arrowRight:hover, .arrowLeft:hover {
+    color: lighten($spanColor,20%);
+  }
+
+}
