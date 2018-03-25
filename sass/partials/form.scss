@@ -111,8 +111,7 @@
 }
 
 .checkbox input:checked ~ .checkmark {
-  //background-image: url("../../images/form_ok.jpg");
-  background-color: yellow;
+  background: url("../images/form_ok.jpg") center no-repeat;
 }
 
 .content aside {

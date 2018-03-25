@@ -21,11 +21,10 @@
       }
 
       img:hover + div {
-        opacity: 0;
+        transform: scale(0);
       }
 
       .overlay {
-        opacity: 1;
         width: 329px;
         height: 60px;
         background-color: rgba(255, 255, 255, 0.5);
